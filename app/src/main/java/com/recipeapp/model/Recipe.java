@@ -1,5 +1,10 @@
 package com.recipeapp.model;
 
+/*
+ * レシピ管理アプリのデータモデルとしてRecipeクラスの作成
+ * レシピの名前「name」・材料リスト「ingredients」
+ */
+
 import java.util.ArrayList;
 
 public class Recipe {

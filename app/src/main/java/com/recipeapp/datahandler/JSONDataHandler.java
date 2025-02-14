@@ -1,5 +1,10 @@
 package com.recipeapp.datahandler;
 
+/*
+ * インタフェースの実装
+ * JSONクラスに対応したクラス
+ */
+
 import java.util.ArrayList;
 import com.recipeapp.model.Recipe;
 

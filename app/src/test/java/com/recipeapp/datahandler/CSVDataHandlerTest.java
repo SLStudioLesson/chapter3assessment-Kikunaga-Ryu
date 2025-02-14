@@ -53,7 +53,7 @@ class CSVDataHandlerTest {
     @Test
     void testWriteData() throws IOException {
         Recipe newRecipe = new Recipe("Pancakes", new ArrayList<>(List.of(new Ingredient("Flour"), new Ingredient("Milk"))));
-        //handler.writeData(newRecipe);
+        // handler.writeData(newRecipe);
 
         List<Recipe> recipes = handler.readData();
         assertTrue(recipes.stream().anyMatch(recipe -> recipe.getName().equals("Pancakes")));
@@ -61,8 +61,8 @@ class CSVDataHandlerTest {
 
     @Test
     void testSearchData() throws IOException {
-        //List<Recipe> foundRecipes = handler.searchData("name=Soup");
-        //assertEquals(1, foundRecipes.size(), "Should find 1 recipe with 'Soup' in the name.");
-        //assertEquals("Tomato Soup", foundRecipes.get(0).getName(), "Found recipe should be Tomato Soup.");
+        // List<Recipe> foundRecipes = handler.searchData("name=Soup");
+        // assertEquals(1, foundRecipes.size(), "Should find 1 recipe with 'Soup' in the name.");
+        // assertEquals("Tomato Soup", foundRecipes.get(0).getName(), "Found recipe should be Tomato Soup.");
     }
 }

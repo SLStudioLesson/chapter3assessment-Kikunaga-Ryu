@@ -1,5 +1,10 @@
 package com.recipeapp.datahandler;
 
+/*
+ * インターフェースの実装
+ * CSV形式に対応したクラス
+ */
+
 import java.util.ArrayList;
 import com.recipeapp.model.Recipe;
 
