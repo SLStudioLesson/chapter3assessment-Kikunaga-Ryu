@@ -2,26 +2,42 @@ package com.recipeapp.datahandler;
 
 /*
  * インタフェースの実装
- * JSONクラスに対応したクラス
+ * JSONは「JavaScriptオブジェクト記法」の略で、データをテキスト形式で記述する
+ * getMode()メソッドにJSONの文字列を返す
  */
 
 import java.util.ArrayList;
 import com.recipeapp.model.Recipe;
+import java.io.IOException;
 
-public class JSONDataHandler {
+public class JSONDataHandler implements DataHandler{
+    private String filePath;
+
+    public JSONDataHandler() {
+        this.filePath = "app/src/main/resources/recipes.json";
+    }
+
+    public JSONDataHandler(String filePath) {
+        this.filePath = filePath;
+    }
+
+    @Override
     public String getMode() {
         return "JSON";
     }
 
-    public ArrayList<Recipe> readData() {
+    @Override
+    public ArrayList<Recipe> readData() throws IOException{
         return null;
     }
 
-    public void writeData() {
+    @Override
+    public void writeData(Recipe recipe) throws IOException{
         
     }
 
-    public ArrayList<Recipe> searchData() {
+    @Override
+    public ArrayList<Recipe> searchData(String keyword) throws IOException{
         return null;
     }
 }
